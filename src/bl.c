@@ -27,9 +27,6 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    printf("sched_getcpu = %d\n", sched_getcpu());
-
-
     cpu_set_t *mask = NULL;
 
     if (argv[1][0] == '-' && argv[1][1] == 'b') {
